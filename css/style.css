@@ -1,0 +1,131 @@
+:root {
+  --bgr: #2e2f42;
+  --logo: #4d5ae5;
+  --logo-light: #f4f4fd;
+  --text: #434455;
+  --ctc-link: #434455;
+  --hero: #2e2f42;
+  --logo-d: #2e2f42;
+  --background: #4d5ae5;
+  --bcr-clr: #ffffff;
+  --txt-fot: #e7e9fc;
+  --hov: #404bbf;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-list {
+  list-style-type: none;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--bcr-clr);
+  color: var(var--bgr);
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--bcr-clr);
+  color: var(var(--bgr));
+}
+
+/* Logo */
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo);
+}
+
+/* Logo Dark */
+.logo-dark {
+  color: var(--logo-d);
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--bgr);
+}
+/* Contacts */
+.contacts-link {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--ctc-link);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--bgr);
+}
+
+/* Button */
+.btn {
+  background: var(--background);
+  color: var(--logo-light);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--bcr-clr);
+  /* function-text */
+}
+.sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--bgr);
+}
+.section-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+/*  We doing */
+.section-title {
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--bgr);
+}
+
+/* footer */
+.logo-light {
+  color: var(--logo-light);
+}
+/* footer-text */
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--txt-fot);
+}
+.footer {
+  background: var(--bgr);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hov);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--hov);
+}
+
+cursor: pointer;
