@@ -16,8 +16,8 @@ a {
   text-decoration: none;
 }
 
-.menu-list {
-  list-style-type: none;
+.menu-list.item:last-child{
+  margin: right 0;
 }
 
 .body {
@@ -25,13 +25,27 @@ a {
   font-size: 16px;
   background-color: var(--bcr-clr);
   color: var(var--bgr);
+  box-sizing: border-box;  
+  
+}
+.img{
+  display: block;
+  max-width: 100%;
+}
+.header{
+  width: 1440px;
+  padding: 24;
+}
+.header-container{  
+  display: flex;
+  align-items: center; 
 }
 
-.body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  background-color: var(--bcr-clr);
-  color: var(var(--bgr));
+.nav{ 
+  display: flex;
+  align-items: center;   
+  margin-right:156px;
+  
 }
 
 /* Logo */
@@ -44,65 +58,185 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo);
+  margin-left: 156px;
+  margin-right: 76px;
+  
 }
 
 /* Logo Dark */
 .logo-dark {
   color: var(--logo-d);
 }
-
+ 
 .nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--bgr);
+  color: var(--bgr);  
+  
+  
 }
+.menu-list{
+list-style-type: none;
+display: flex;
+gap: 40px;
+}
+
 /* Contacts */
 .contacts-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--ctc-link);
+  
+  
 }
 
 /* Hero */
 .hero {
   background-color: var(--bgr);
-}
+    width: 1440px;
+    height: 600px;
+    padding-top: 25px;
+    
+} 
 
 /* Button */
 .btn {
   background: var(--background);
   color: var(--logo-light);
+  display:block;
+  margin-left: 0 auto;
+  margin-right:0 auto;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  
 }
+
 
 .hero-title {
   font-size: 56px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--bcr-clr);
-  /* function-text */
+  color: var(--bcr-clr); 
+  margin: 0 auto;
+  max-width: 498px;
+  align-items: center;
+  
 }
+
+.hero-container{
+  padding: 188px ;
+}
+.title-container{
+  width: 1128px;
+  margin-left: 156px;
+  margin-right: 156px;
+  gap: 24px;
+}
+
+ /* function-text */
 .sub-title {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--bgr);
+  width: 264px;
+  height: 24px;
+  
 }
+
+.menu-list-list{
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left:0 auto;
+  margin-right: 0 auto;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  
+
+}
+
 .section-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
+  margin-left: auto;
+  margin-right: auto; 
 }
+.section-text{
+display: flex;
+justify-content: center;
+padding-top: 8px;
+
+}
+
 /*  We doing */
 .section-title {
+  width: 1440px;
   font-size: 36px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--bgr);
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.section-title{
+  margin-bottom: 72px;
+  
+}
+
+.card-set{
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: -24px;
+  margin-top: -24px;
+
+}
+
+
+.card-set >.doiing-img{
+  flex-basis: calc(100%/3-24px);
+  margin-left: 24px;
+  margin-top: 24px;
+  margin: auto;
+  padding: auto;
+  
+ 
+}
+.comand-container{
+width: 1440px;
+margin-left: 156px;
+margin-right: 156px;
+gap:24px;
+}
+.cart-content{
+  padding: 8px;  
 }
 
 /* footer */
@@ -111,12 +245,27 @@ a {
 }
 /* footer-text */
 .footer-text {
+  margin-top: 16px;
+  margin-left: 156px;
+  width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--txt-fot);
 }
+
 .footer {
+  margin-left:  0 auto;
+  margin-right: 0 auto;
   background: var(--bgr);
+   width: 1440px;
+   height: 310px;
+}
+.foter-container{
+  width: 1440px;
+  margin-top: 100px;
+}
+.logo-footer{
+  padding-top: 100px;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -128,4 +277,23 @@ a {
   color: var(--hov);
 }
 
-cursor: pointer;
+cursor:pointer
+
+
+
+h1,
+h2
+p{
+    margin: 0;
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+
+} 
+
+.doiing-img *{
+  outline: 1px solid red;
+}
